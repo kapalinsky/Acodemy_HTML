@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>White Box Testing</title>
     <style>
+        * {box-sizing: border-box;}
+        
         body {
             font-family: Arial;
             margin: 0px;
@@ -75,17 +77,43 @@
             color: white;
         }
 
+
+        .insert-image {
+            position: relative;
+            width: 50%;
+        }
+
+        .image-overlay {
+            position: absolute;
+            bottom: 0; 
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1; 
+            width: 100%;
+            transition: .5s ease;
+            opacity:0;
+            color: white;
+            font-size: 15px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .insert-image:hover .image-overlay {
+            opacity: 1;
+        }
+
+
         #nav-list {
             list-style-type: none;
         }
 
         figure {
-            margin-left: 350px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
         }
 
-        figcaption{
-            margin-left: 150px;
-        }
     </style>
 </head>
 <body>
@@ -105,15 +133,15 @@
         <section class="theory">
             <h2>What is it?</h2>
             <p>
-                <b>White-box testing</b> is a testing technique in which software’s internal structure, design, 
+                <b>White-box testing</b> is a testing technique in which softwares internal structure, design, 
                 and coding are tested to verify input-output flow and improve design, 
                 usability, and security. In white box testing, code is visible to testers, 
                 so it is also called Clear box testing, Open box testing, Transparent box testing, 
                 Code-based testing, and Glass box testing.
             </p>
-            <figure>
-                <input type="image" src="images/white.jpg" alt="White-box" width="400">
-                <figcaption>
+            <figure class="insert-image">
+                <input type="image" src="images/white.jpg" alt="White-box" width="400" class="image">
+                <figcaption class="image-overlay">
                     <a href="https://assets.website-files.com/5ff66329429d880392f6cba2/62750c7611a53c3bc9d85f98_White%20Box%20Testing-p-800.jpeg">Image source</a>
                 </figcaption>
             </figure>
