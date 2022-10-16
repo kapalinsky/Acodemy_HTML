@@ -7,7 +7,7 @@
     <title>White Box Testing</title>
     <style>
         html {
-            background-image: linear-gradient(#a0d2eb, #e5eaf5, #d0bdf4, #8458B3, #a28089);
+            background-image: linear-gradient(#a0d2eb, #e5eaf5, #d0bdf4, #8458B3, #a28089 50%);
             background-attachment: fixed;
         }
     </style>
@@ -24,5 +24,72 @@
             </ul>
         </nav>
     </header>
+    <article id="theory">
+        <h1>White-box testing</h1>
+        <section id="definition" class="theory-section">
+            <h2>What is it?</h2>
+            <p>
+                <b>White-box testing</b> is a testing technique in which software’s internal structure, design, 
+                and coding are tested to verify input-output flow and improve design, 
+                usability, and security. In white box testing, code is visible to testers, 
+                so it is also called Clear box testing, Open box testing, Transparent box testing, 
+                Code-based testing, and Glass box testing.
+            </p>
+            <figure id="image">
+                <img 
+                    src="images/white.jpg"
+                    alt="White-box"
+                    width="400" />
+                <figcaption id="figcap">
+                    <a href="https://assets.website-files.com/5ff66329429d880392f6cba2/62750c7611a53c3bc9d85f98_White%20Box%20Testing-p-800.jpeg">Image source</a>
+                </figcaption>
+            </figure>
+            <p>
+                It is one of two parts of the Box Testing approach to software testing. Its counterpart, 
+                Blackbox testing, involves testing from an external or end-user perspective. On the other hand, 
+                White box testing in software engineering is based on the inner workings of an application and 
+                revolves around internal testing.
+            </p>
+            <p>
+                The term “WhiteBox” was used because of the see-through box concept. The clear box or WhiteBox 
+                name symbolizes the ability to see through the software outer shell (or “box”) into its inner 
+                workings. Likewise, the “black box” in “Black Box Testing” symbolizes not being able to see the 
+                inner workings of the software so that only the end-user experience can be tested.
+            </p>
+        </section>
+        <section id="usage" class="theory-section">
+            <h2>What do you verify in White Box Testing?</h2>
+            <p>
+                White box testing involves the testing of the software code for the following:
+            </p>
+            <ul>
+                <li>Internal security holes</li>
+                <li>Broken or poorly structured paths in the coding processes</li>
+                <li>The flow of specific inputs through the code</li>
+                <li>Expected output</li>
+                <li>The functionality of conditional loops</li>
+                <li>Testing of each statement, object, and function on an individual basis</li>
+            </ul>
+            <p>
+                The testing can be done at system, integration, and unit levels of software development. 
+                One of the basic goals of whitebox testing is to verify a working flow for an application. 
+                It involves testing a series of predefined inputs against expected or desired outputs so that 
+                when a specific input does not result in the expected output, you have encountered a bug.
+            </p>
+            <h2>How do you perform White Box Testing?</h2>
+            <p>
+                We have divided it into two basic steps to give you a simplified explanation of white box testing. 
+                This is what testers do when testing an application using the white box testing technique:
+            </p>
+            <ol>
+                <li>understand the source of code</li>
+                <li>create test cases and execute</li>
+            </ol>
+        </section>
+    </article>
+    <footer>
+        <h3>To see white-box examples:</h3>
+        <input type="button" onlick="examples.html" value="Click here!">
+    </footer>
 </body>
 </html>
