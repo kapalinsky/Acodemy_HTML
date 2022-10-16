@@ -12,8 +12,8 @@ This is hometask.
      - [X] create a table which will store images/videos/music. Static.
      - [X] navigation bar
 2. Style web pages:
-   - [ ] create styling for elements using element id
-   - [ ] -II- using classes
-   - [ ] -II- using all different selectors
-   - [ ] use flexbox
-   - [ ] use transition/overlay effects
+   - [X] create styling for elements using element id
+   - [X] -II- using classes
+   - [X] -II- using all different selectors
+   - [X] use flexbox
+   - [X] use transition/overlay effects
