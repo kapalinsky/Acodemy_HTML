@@ -5,21 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
+    <style>
+        * {box-sizing: border-box;}
+        
+        body {
+            font-family: Arial;
+            margin: 0px;
+            background-image: linear-gradient(#f0efef, #ddeedd, #c2d4dd);
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: white;
+        }
+        
+        #page-name {
+            padding: 15px;
+            text-align: center;
+        }
+
+        article, .text-intro, form {
+            margin-left: 30px;
+            margin-right: 200px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            margin-left: 20px;
+        }
+
+        .main-nav {
+            display: flex;
+            background-color: #b0aac0;
+        }
+
+        .main-nav a {
+            color: #333;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .main-nav a:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        .main-nav a.active {
+            background-color: #333;
+            color: white;
+        }
+
+        #nav-list {
+            list-style-type: none;
+        }
+
+        label {
+            display: inline-block;
+            clear: left;
+            width: 200px;
+            text-align: left;
+        }
+
+        input {
+            display: inline-block;
+            
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
+        <h1 id="page-name">White-box testing</h1>
+        <nav class="main-nav">
+            <ul id="nav-list">
                 <li>
                     <a href="home.html">Home</a>
                     <a href="examples.html">Examples</a>
-                    <a href="feedback.html">Feedback</a>
+                    <a class="active" href="feedback.html">Feedback</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <div>
-        <h2>Please, let me know your opinion about White-box Testing article</h2>
+    <div class="text-intro">
+        <h4>Please, let me know your opinion about White-box Testing article</h4>
     </div>
     <form action="" method="post">
         <label for="name">Your name:</label>
@@ -28,7 +96,7 @@
         <label for="email">Email:</label>
         <input type="email" placeholder="example@example.com" id="email"><br>
         <br>
-        <label for="opinion">Let me know your opinion:</label>
+        <label for="opinion">Let me know your's opinion:</label>
         <br>
         <textarea id="opinion" name="opinion" rows="5" cols="50" maxlength="255"></textarea>
         <br>
