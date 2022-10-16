@@ -6,50 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>White Box Testing</title>
     <style>
-        html {
-            background-image: linear-gradient(#ffffff, #e5eaf5, #a0d2eb 90%);
-            background-attachment: fixed;
-        }
-
         body {
             font-family: Arial;
             margin: 0px;
+            background-image: linear-gradient(#f0efef, #ddeedd, #c2d4dd);
+            background-attachment: fixed;
         }
 
-        #home-article {
-            margin: 30px;
-            margin-right: 800px;
+        header {
+            background-color: white;
+        }
+
+
+        article, footer {
+            margin-left: 30px;
+            margin-right: 200px;
             margin-bottom: 30px;
         }
 
-        footer {
-            margin: 30px;
-            margin-bottom: 30px;
-            margin-right: 800px;
+
+        h2 {
+            margin-left: 20px;
         }
+
+        #page-name {
+            padding: 15px;
+            text-align: center;
+        }
+
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .youtube {
+            flex: 30%;
+            padding: 10px;
+            align-self: center;
+        }
+
+        
+        .theory {
+            flex: 30%;
+            padding: 20px;
+        }
+
 
         .main-nav {
             display: flex;
-            background-color: #E0FFFF;
+            background-color: #b0aac0;
         }
 
         .main-nav a {
-            color: black;
-            font-size: 30x;
-            float: left;
+            color: #333;
+            padding: 14px 20px;
+            text-decoration: none;
             text-align: center;
+        }
+
+        .main-nav a:hover {
+            background-color: #333;
+            color: white;
         }
 
         .main-nav a.active {
             background-color: #333;
             color: white;
         }
+
+        #nav-list {
+            list-style-type: none;
+        }
+
+        figure {
+            margin-left: 350px;
+        }
+
+        figcaption{
+            margin-left: 150px;
+        }
     </style>
 </head>
 <body>
     <header>
+        <h1 id="page-name">White-box testing</h1>
         <nav class="main-nav">
-            <ul>
+            <ul id="nav-list">
                 <li>
                     <a class="active" href="home.html">Home</a>
                     <a href="examples.html">Examples</a>
@@ -58,9 +101,8 @@
             </ul>
         </nav>
     </header>
-    <article id="home-article">
-        <h1>White-box testing</h1>
-        <section>
+    <article class="main">
+        <section class="theory">
             <h2>What is it?</h2>
             <p>
                 <b>White-box testing</b> is a testing technique in which software’s internal structure, design, 
@@ -70,10 +112,6 @@
                 Code-based testing, and Glass box testing.
             </p>
             <figure>
-                <!--<img 
-                    src="images/white.jpg"
-                    alt="White-box"
-                    width="400" />-->
                 <input type="image" src="images/white.jpg" alt="White-box" width="400">
                 <figcaption>
                     <a href="https://assets.website-files.com/5ff66329429d880392f6cba2/62750c7611a53c3bc9d85f98_White%20Box%20Testing-p-800.jpeg">Image source</a>
@@ -91,11 +129,6 @@
                 workings. Likewise, the “black box” in “Black Box Testing” symbolizes not being able to see the 
                 inner workings of the software so that only the end-user experience can be tested.
             </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/3bJcvBLJViQ" title="YouTube video player" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen></iframe>
-        </section>
-        <section>
             <h2>What do you verify in White Box Testing?</h2>
             <p>
                 White box testing involves the testing of the software code for the following:
@@ -124,6 +157,11 @@
                 <li>create test cases and execute</li>
             </ol>
             <input type="button" onclick="window.location.href='examples.html';" value="Examples">
+        </section>
+        <section class="youtube">
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/3bJcvBLJViQ" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
         </section>
     </article>
     <footer>
