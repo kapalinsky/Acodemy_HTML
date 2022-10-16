@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Feedback</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                    <a href="examples.html">Examples</a>
+                    <a href="feedback.html">Feedback</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <h2>Please, let me know your opinion about White-box Testing article</h2>
+    </div>
+    <form action="" method="post">
+        <label for="name">Your name:</label>
+        <input type="text" name="name" id="name"><br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="example@example.com" id="email"><br>
+        <br>
+        <label for="opinion">Let me know your opinion:</label>
+        <br>
+        <textarea id="opinion" name="opinion" rows="5" cols="50" maxlength="255"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
