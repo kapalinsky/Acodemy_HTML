@@ -6,25 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>White Box Testing</title>
     <style>
-        /*html {
-            background-image: linear-gradient(#a0d2eb, #e5eaf5, #d0bdf4, #8458B3, #a28089 50%);
+        html {
+            background-image: linear-gradient(#ffffff, #e5eaf5, #a0d2eb 90%);
             background-attachment: fixed;
-        }*/
+        }
+
+        body {
+            font-family: Arial;
+            margin: 0px;
+        }
+
+        #home-article {
+            margin: 30px;
+            margin-right: 800px;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            margin: 30px;
+            margin-bottom: 30px;
+            margin-right: 800px;
+        }
+
+        .main-nav {
+            display: flex;
+            background-color: #E0FFFF;
+        }
+
+        .main-nav a {
+            color: black;
+            font-size: 30x;
+            float: left;
+            text-align: center;
+        }
+
+        .main-nav a.active {
+            background-color: #333;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="main-nav">
             <ul>
                 <li>
-                    <a href="home.html">Home</a>
+                    <a class="active" href="home.html">Home</a>
                     <a href="examples.html">Examples</a>
                     <a href="feedback.html">Feedback</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <article>
+    <article id="home-article">
         <h1>White-box testing</h1>
         <section>
             <h2>What is it?</h2>
@@ -89,7 +123,7 @@
                 <li>understand the source of code</li>
                 <li>create test cases and execute</li>
             </ol>
-            <input type="button" onlick="location.href='examples.html';" value="Examples">
+            <input type="button" onclick="window.location.href='examples.html';" value="Examples">
         </section>
     </article>
     <footer>
